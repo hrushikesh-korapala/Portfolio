@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hrushikesh-korapala.github.io/static/css/main.bbb89790.css",
+    "main.js": "/hrushikesh-korapala.github.io/static/js/main.7d52eb19.js",
+    "index.html": "/hrushikesh-korapala.github.io/index.html",
+    "main.bbb89790.css.map": "/hrushikesh-korapala.github.io/static/css/main.bbb89790.css.map",
+    "main.7d52eb19.js.map": "/hrushikesh-korapala.github.io/static/js/main.7d52eb19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbb89790.css",
+    "static/js/main.7d52eb19.js"
+  ]
+}
