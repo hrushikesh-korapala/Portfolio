@@ -8,7 +8,7 @@ function Home() {
   const roles=["Software Developer","ML Engineer"];
 
   const handleClick = (path) => {
-    navigate('/'+path);
+    navigate('/hrushikesh-korapala.github.io/'+path);
   };
   return (
     <div>

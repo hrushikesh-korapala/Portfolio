@@ -6,7 +6,7 @@ function Timeline() {
   const navigate = useNavigate();
 
   const handleClick = (path) => {
-    navigate('/'+path);
+    navigate('/hrushikesh-korapala.github.io/'+path);
   };
   return (
     <div className="header">
