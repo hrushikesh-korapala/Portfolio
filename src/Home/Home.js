@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const navigate = useNavigate();
+  const roles=["Software Developer","ML Engineer"];
 
   const handleClick = (path) => {
     navigate('/'+path);
@@ -33,7 +34,7 @@ function Home() {
       <div className="name-item">
         Korpala Hrushikesh
       </div>
-      <TypingAnimation text="Software Developer" delay={100} />
+      <TypingAnimation textArray={roles} delay={100} />
     </div>
   );
 }

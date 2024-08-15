@@ -2,22 +2,68 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 
-const TypingAnimation = ({ text, delay }) => {
+const TypingAnimation = ({ textArray, delay }) => {
+  const [text, setText] = useState(textArray[0]);
+  const [arrayIndex,setArrayIndex] = useState(1);
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [prevText, setPrevText] = useState('');
+  const [val,setVal] = useState(-1);
 
   useEffect(() => {
-    if (currentIndex <= text.length) {
-      const timeout = setTimeout(() => {
-        setPrevText(prevText => prevText + text[currentIndex]);
-        setCurrentText(currText => prevText + '|');
-        setCurrentIndex(prevIndex => prevIndex + 1);
-      }, delay);
+    if (val === -1) {
+      if(currentIndex<text.length) {
+        const timeout = setTimeout(() => {
+          setCurrentIndex(currentIndex+1);
+          setCurrentText(currentText.slice(0,-1)+text[currentIndex]+'|');
+        }, delay);
+        return () => clearTimeout(timeout);
+      }
+      else {
+        const timeout = setTimeout(() => {
+          setVal(0);
+        }, delay);
+        return () => clearTimeout(timeout);
+      }
+    }
+    else if (val === -2) {
+      if(currentIndex > 0) {
+        const timeout = setTimeout(() => {
+          setCurrentIndex(currentIndex-1);
+          setCurrentText(currentText.slice(0,-2)+'|');
+        }, delay);
+        return () => clearTimeout(timeout);
+      }
+      else {
+        const timeout = setTimeout(() => {
+          setVal(-1);
+          setArrayIndex((arrayIndex+1)%textArray.length); 
+          setText(textArray[arrayIndex]);
+        }, delay);
+        return () => clearTimeout(timeout);
+      }
 
+    }
+    else if (val === 2) {
+      const timeout = setTimeout(() => {
+        setVal(-2);
+      },delay);
       return () => clearTimeout(timeout);
     }
-  }, [currentIndex, delay, text]);
+    else if (val%2 === 0) {
+      const timeout = setTimeout(() => {
+        setVal(val+1);
+        setCurrentText(currentText.slice(0,-1));
+      }, 3*delay);
+      return () => clearTimeout(timeout);
+    }
+    else if (val%2 === 1) {
+      const timeout = setTimeout(() => {
+        setVal(val+1);
+        setCurrentText(currentText+'|');
+      }, 3*delay);
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex,val]);
 
   return <div className='type-container'>
     <span className='type-constant'> I am </span>
