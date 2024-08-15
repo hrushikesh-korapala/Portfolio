@@ -8,10 +8,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Timeline" element={<Timeline />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/Blogs" element={<Blogs />} />
+        <Route path="hrushikesh-korapala.github.io/" element={<Home />} />
+        <Route path="hrushikesh-korapala.github.io/Timeline" element={<Timeline />} />
+        <Route path="hrushikesh-korapala.github.io/Projects" element={<Projects />} />
+        <Route path="hrushikesh-korapala.github.io/Blogs" element={<Blogs />} />
       </Routes>
     </Router>
   );
