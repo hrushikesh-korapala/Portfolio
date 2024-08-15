@@ -1,0 +1,33 @@
+.name-item {
+  font: 'Poppins';
+  font-size: 50px;
+  font-weight: 1000;
+  text-align: left;
+  padding: 1% 20%;
+  padding-top: 200px;
+}
+
+.type-container {
+  font: 'Poppins';
+  font-size: 50px;
+  font-weight: 1000;
+  text-align: left;
+  padding: 1% 20%;
+}
+
+.type-constant {
+  font: 'Poppins';
+  font-size: 40px;
+  font-weight: 1000;
+  text-align: left;
+  flex: 4;
+}
+
+.type-animation {
+  font: 'Poppins';
+  font-size: 40px;
+  color: #12D640; /* Change background color on hover */
+  font-weight: 1000;
+  text-align: left;
+  flex: 18; 
+}
