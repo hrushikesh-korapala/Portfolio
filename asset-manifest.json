@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.bbb89790.css",
-    "main.js": "/static/js/main.50fec776.js",
-    "index.html": "/index.html",
-    "main.bbb89790.css.map": "/static/css/main.bbb89790.css.map",
-    "main.50fec776.js.map": "/static/js/main.50fec776.js.map"
+    "main.css": "/hrushikesh-korapala.github.io/static/css/main.bbb89790.css",
+    "main.js": "/hrushikesh-korapala.github.io/static/js/main.b6e744ff.js",
+    "index.html": "/hrushikesh-korapala.github.io/index.html",
+    "main.bbb89790.css.map": "/hrushikesh-korapala.github.io/static/css/main.bbb89790.css.map",
+    "main.b6e744ff.js.map": "/hrushikesh-korapala.github.io/static/js/main.b6e744ff.js.map"
   },
   "entrypoints": [
     "static/css/main.bbb89790.css",
-    "static/js/main.50fec776.js"
+    "static/js/main.b6e744ff.js"
   ]
 }
