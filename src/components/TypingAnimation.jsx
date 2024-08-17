@@ -1,6 +1,6 @@
 // src/components/TypingAnimation.js
 import React, { useState, useEffect } from 'react';
-import './Home.css';
+import '../styles/TypingAnimation.css';
 
 const TypingAnimation = ({ textArray, delay }) => {
   const [text, setText] = useState(textArray[0]);
@@ -8,6 +8,7 @@ const TypingAnimation = ({ textArray, delay }) => {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [val,setVal] = useState(-1);
+  
 
   useEffect(() => {
     if (val === -1) {
@@ -63,7 +64,7 @@ const TypingAnimation = ({ textArray, delay }) => {
       }, 3*delay);
       return () => clearTimeout(timeout);
     }
-  }, [currentIndex,val]);
+  }, [textArray,currentIndex,val,text,currentText,arrayIndex,delay]);
 
   return <div className='type-container'>
     <span className='type-constant'> I am </span>

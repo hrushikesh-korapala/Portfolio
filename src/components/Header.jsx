@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import './Home.css';
-import TypingAnimation from './TypingAnimation';
+import React from 'react';
+import '../styles/Header.css';
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const navigate = useNavigate();
-  const roles=["Software Developer","ML Engineer"];
 
   const handleClick = (path) => {
-    navigate('/hrushikesh-korapala.github.io/'+path);
+    navigate('/Portfolio/'+path);
   };
   return (
     <div>
@@ -31,10 +29,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="name-item">
-        Korpala Hrushikesh
-      </div>
-      <TypingAnimation textArray={roles} delay={100} />
     </div>
   );
 }

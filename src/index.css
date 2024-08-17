@@ -19,43 +19,4 @@ code {
   gap: 20px;
   padding: 1% 20%;
 }
-.route-container {
-  display: flex; /* Enables Flexbox */
-  flex-direction: row; /* Aligns children in a row */
-  align-items: center; /* Centers items vertically */
-  flex-wrap: wrap; /* Allows wrapping of children */
-  flex: 1
-}
-
-.route-item {
-  display: inline-block;
-  flex: 1; /* Each item takes equal space */
-  text-align: center;
-  margin: 10px; /* Space between items */
-}
-
-.route-text {
-  display: inline-block;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.route-text:hover {
-  transform: scale(1.1); /* Slightly enlarge item on hover */
-  color: #12D640; /* Change background color on hover */
-  cursor: pointer;
-}
-
-.rishi-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex: 1;
-}
-.rishi {
-  font: 'Poppins';
-  font-size: 40px;
-  font-weight: 1000;
-  text-align: left;
-  flex: 4; /* Larger item taking more space */
-}
 

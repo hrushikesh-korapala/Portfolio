@@ -1,19 +1,17 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from  './Home/Home';
-import Timeline from './Timeline/Timeline';
-import Projects from './Projects/Projects';
-import Blogs from './Blogs/Blogs';
+import { Route, Routes } from 'react-router-dom';
+import Home from  './pages/Home';
+import Timeline from './pages/Timeline';
+import Projects from './pages/Projects';
+import Blogs from './pages/Blogs';
 
 function App() {
   return (
-    <Router>
       <Routes>
-        <Route path="hrushikesh-korapala.github.io/" element={<Home />} />
-        <Route path="hrushikesh-korapala.github.io/Timeline" element={<Timeline />} />
-        <Route path="hrushikesh-korapala.github.io/Projects" element={<Projects />} />
-        <Route path="hrushikesh-korapala.github.io/Blogs" element={<Blogs />} />
+        <Route path="Portfolio/" element={<Home />} />
+        <Route path="Portfolio/Timeline" element={<Timeline />} />
+        <Route path="Portfolio/Projects" element={<Projects />} />
+        <Route path="Portfolio/Blogs" element={<Blogs />} />
       </Routes>
-    </Router>
   );
 }
 
